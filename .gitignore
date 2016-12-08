@@ -1,0 +1,12 @@
+clients/node_modules/
+
+/ul/.bundle
+/ul/.byebug_history
+/ul/db/*.sqlite3
+/ul/db/*.sqlite3-journal
+/ul/log/*
+!/ul/log/.keep
+/ul/tmp
+
+/clients/platforms/
+/clients/plugins/

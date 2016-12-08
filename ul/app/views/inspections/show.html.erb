@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+<%=@inspection.inspector%>
+<%=@inspection.properties["Street Number"]%>
+<%=@inspection.properties["Street Name"]%>
+<%= link_to 'Edit', edit_inspection_path(@inspection) %> |
+<%= link_to 'Back', inspections_path %>

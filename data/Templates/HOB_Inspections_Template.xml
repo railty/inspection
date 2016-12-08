@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RedlineDocument xmlns="urn:HexMobileClient.xsd" ProgID="GNetClient.GRedlineDisplayCtrl" Version="1">
+  <Category Name="Inspect" Username="Inspect" IsDisplayed="1" DisplayLevel="10" Operations="AllOperations" DefaultMode="DisplayOnly" Modes="AllowAllModes" EventsFired="Select,ModeChange,Delete,Cancel,LButtonDown,LButtonUp,LButtonDblClick,PlacementStart,PlacementEnd,RButtonDown,GeometryChange" LineColor="255" LineWidth="2" LineStyle="0" FillColor="16777215" FillHatch="4" FillStyle="1" FontStyle="Regular" FontName="Arial" FontSize="12" FontColor="0" TextValue="" SymbolFontCharset="1" SymbolFontName="G_MapPins" SymbolSize="20" SymbolColor="255" SymbolValue="I" ViewScaleDependent="0"/>
+  <Properties>
+    <Property Name="Job" Type="string" Value="FieldDataCollection"/>
+    <Property Name="Notes" Type="string" Value=""/>
+    <Property Name="Template" Type="{Visible=False}" Value=""/>
+  </Properties>
+  <NamedSketch Name="Padmount Transformer">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="314"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Padmount Transformer for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Location}" Value=""/>
+        <Property Name="+User" Type="{Tab=TX Info;Type=string;Ano=314600056}" Value=""/>
+        <Property Name="+Location" Type="{Tab=TX Info;Type=string;Ano=314600057;Required=True;ReadOnly=True}" Value="{Ano=314010002}"/>
+        <Property Name="+Street Number" Type="{Tab=TX Info;Type=string;Ano=314600058}" Value="{Ano=310019}"/>
+        <Property Name="+Street Name" Type="{Tab=TX Info;Type=string;Ano=314600059}" Value="{Ano=310020}"/>
+        <Property Name="+Location Info" Type="{Tab=TX Info;Type=string;Ano=314600060;Items=Front Lot,Rear Lot,Side Lot,Below Grade,Above Grade,Inside Building,Other (see notes)}" Value=""/>
+        <Property Name="+Control Number" Type="{Tab=TX Info;Type=string;Ano=314600062}" Value=""/>
+        <Property Name="+Transformer Type" Type="{Tab=TX Info;Type=string;Ano=314600063}" Value="{Ano=314010012}"/>
+        <Property Name="+Serial Number" Type="{Tab=TX Info;Type=string;Ano=314600064}" Value=""/>
+        <Property Name="+Manufacturer" Type="{Tab=TX Info;Type=string;Ano=314600065;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date" Type="{Tab=TX Info;Type=string;Ano=314600066}" Value=""/>
+        <Property Name="+KVA" Type="{Tab=TX Info;Type=string;Ano=314600067}" Value="{Ano=314010004}"/>
+        <Property Name="+Impedance" Type="{Tab=TX Info;Type=string;Ano=314600068}" Value=""/>
+        <Property Name="+Primary Voltage 1" Type="{Tab=TX Info;Type=string;Ano=314600069}" Value=""/>
+        <Property Name="+Primary Voltage 2" Type="{Tab=TX Info;Type=string;Ano=314600070}" Value=""/>
+        <Property Name="+Secondary Voltage 1" Type="{Tab=TX Info;Type=string;Ano=314600071}" Value=""/>
+        <Property Name="+Secondary Voltage 2" Type="{Tab=TX Info;Type=string;Ano=314600072}" Value=""/>
+        <Property Name="+PCB" Type="{Tab=TX Info;Type=string;Ano=314600073}" Value=""/>
+        <Property Name="+Phase" Type="{Tab=TX Info;Type=string;Ano=314600074}" Value="{Ano=300003}"/>
+        <Property Name="+Base Details" Type="{Tab=Exterior;Type=string;Ano=314600156;Items=Concrete Cap,Concrete Well,Fibreglass Well,Foundation Req'd,Other (See Notes)}" Value=""/>
+        <Property Name="+Condition of Base" Type="{Tab=Exterior;Type=string;Ano=314600157;Items=Good,Fair,Needs Repair,Base Flooded,Debris Buildup,Other (See Notes)}" Value=""/>
+        <Property Name="+Penta Bolt" Type="{Tab=Exterior;Type=string;Ano=314600158;Items=Non Penta Design,OK,Repaired on Site,Needs Repair}" Value=""/>
+        <Property Name="+Lock for Cover" Type="{Tab=Exterior;Type=string;Ano=314600001;Items=OK,Lock Replaced}" Value=""/>
+        <Property Name="+TX Off Pad" Type="{Tab=Exterior;Type=string;Ano=314600002;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+ACCESS" Type="{Tab=Exterior;Type=string;Ano=314600003;Items=OK,Problem,Tree/Shrub,Fence,Other (See Notes)}" Value=""/>
+        <Property Name="+Grading" Type="{Tab=Exterior;Type=string;Ano=314600004;Items=OK,Problem,Low,High,Other(see notes)}" Value=""/>
+        <Property Name="+Corrosion" Type="{Tab=Exterior;Type=string;Ano=314600005;Items=None,Rust Through,Surface Rust,Layers of Rust}" Value=""/>
+        <Property Name="+Damage" Type="{Tab=Exterior;Type=string;Ano=314600006;Items=None,Hood Damaged,Skirt Damaged}" Value=""/>
+        <Property Name="+Stickers Installed" Type="{Tab=Exterior;Type=string;Ano=314600007;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Radial" Type="{Type=boolean;Ano=314600008;Visible=False}" Value=""/>
+        <Property Name="+Dry-Type Fuse Canisters" Type="{Tab=Component;Type=string;Ano=314600009;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Bay-O-Net Fuseholder" Type="{Tab=Component;Type=string;Ano=314600010;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Tap Changer (Component)" Type="{Tab=Component;Type=string;Ano=314600011;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Loadbreak Switch" Type="{Tab=Component;Type=string;Ano=314600012;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Pressure Relief Device" Type="{Tab=Component;Type=string;Ano=314600013;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Other Components (See Notes)" Type="{Tab=Component;Type=string;Ano=314600014;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Oil Leak" Type="{Tab=Oil Leaks;Type=string;Ano=314600021;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Seam" Type="{Tab=Oil Leaks;Type=string;Ano=314600022;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Bushing" Type="{Tab=Oil Leaks;Type=string;Ano=314600023;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+TX Required (Grass Killed)" Type="{Tab=Oil Leaks;Type=string;Ano=314600024;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Plug" Type="{Tab=Oil Leaks;Type=string;Ano=314600025;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Tap Changer (Oil Leak)" Type="{Tab=Oil Leaks;Type=string;Ano=314600026;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Other Oil Leaks (See Notes)" Type="{Tab=Oil Leaks;Type=string;Ano=314600027;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Elbows Switching Restrictions" Type="{Tab=Elbows;Type=string;Ano=314600028;Items=None,Poor Primary Slack,Short Deck,Other (See Notes)}" Value=""/>
+        <Property Name="+Missing Bleeder Wires None" Type="{Tab=Elbows;Type=string;Ano=314600032;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires Insert" Type="{Tab=Elbows;Type=string;Ano=314600033;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires Elbow" Type="{Tab=Elbows;Type=string;Ano=314600034;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires -1" Type="{Tab=Elbows;Type=string;Ano=314600035;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires -2" Type="{Tab=Elbows;Type=string;Ano=314600036;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires -3" Type="{Tab=Elbows;Type=string;Ano=314600037;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Fault Indicators" Type="{Tab=Elbows;Type=string;Ano=314600038;Items=None,-1 Elbow,-2 Elbow}" Value=""/>
+        <Property Name="+Lighting Arrestors" Type="{Tab=Elbows;Type=string;Ano=314600039;Items=None,-1 Elbow,-2 Elbow}" Value=""/>
+        <Property Name="+-1 Elbow Infrared" Type="{Tab=Elbows;Type=string;Ano=314600040}" Value=""/>
+        <Property Name="+-2 Elbow Infrared" Type="{Tab=Elbows;Type=string;Ano=314600041}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=314600042;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=314600043;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=314600044;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Requires Nomenclature" Type="{Tab=Maintenance;Type=string;Ano=314600045;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Housekeeping" Type="{Type=string;Ano=314600046;Visible=False}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=314600047}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=314600048;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=314600049;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=314600050;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=314600051;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=314600052;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=314600053;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=314600054;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+HEX_STATUS" Type="{Type=string;Ano=314600055;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+  <NamedSketch Name="Vault Transformer">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="314"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Vault Transformer for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Location}" Value=""/>
+        <Property Name="+User" Type="{Tab=TX Info;Type=string;Ano=314500056}" Value=""/>
+        <Property Name="+Location" Type="{Tab=TX Info;Type=string;Ano=314500057;Required=True;ReadOnly=True}" Value="{Ano=314010002}"/>
+        <Property Name="+Street Number" Type="{Tab=TX Info;Type=string;Ano=314500058}" Value="{Ano=310019}"/>
+        <Property Name="+Street Name" Type="{Tab=TX Info;Type=string;Ano=314500059}" Value="{Ano=310020}"/>
+        <Property Name="+Location Info" Type="{Tab=TX Info;Type=string;Ano=314500060;Items=Front Lot,Rear Lot,Side Lot,Below Grade,Above Grade,Inside Building,Other (see notes)}" Value=""/>
+        <Property Name="+Transformer Type" Type="{Type=string;Ano=314500063;Visible=False}" Value=""/>
+        <Property Name="+Phase" Type="{Type=string;Ano=314500074;Visible=False}" Value=""/>
+        <Property Name="+Control Number (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500075}" Value=""/>
+        <Property Name="+Transformer Type (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500076}" Value=""/>
+        <Property Name="+Serial Number (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500077}" Value=""/>
+        <Property Name="+Manufacturer (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500078;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500079}" Value=""/>
+        <Property Name="+KVA (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500080}" Value=""/>
+        <Property Name="+Impedance (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500081}" Value=""/>
+        <Property Name="+Primary Voltage 1 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500082}" Value=""/>
+        <Property Name="+Primary Voltage 2 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500083}" Value=""/>
+        <Property Name="+Secondary Voltage 1 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500084}" Value=""/>
+        <Property Name="+Secondary Voltage 2 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500085}" Value=""/>
+        <Property Name="+PCB (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500086}" Value=""/>
+        <Property Name="+Phase (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314500087}" Value=""/>
+        <Property Name="+Control Number (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500088}" Value=""/>
+        <Property Name="+Transformer Type (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500089}" Value=""/>
+        <Property Name="+Serial Number (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500090}" Value=""/>
+        <Property Name="+Manufacturer (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500091;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500092}" Value=""/>
+        <Property Name="+KVA (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500093}" Value=""/>
+        <Property Name="+Impedance (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500094}" Value=""/>
+        <Property Name="+Primary Voltage 1 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500095}" Value=""/>
+        <Property Name="+Primary Voltage 2 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500096}" Value=""/>
+        <Property Name="+Secondary Voltage 1 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500097}" Value=""/>
+        <Property Name="+Secondary Voltage 2 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500098}" Value=""/>
+        <Property Name="+PCB (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500099}" Value=""/>
+        <Property Name="+Phase (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314500100}" Value=""/>
+        <Property Name="+Control Number (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500101}" Value=""/>
+        <Property Name="+Transformer Type (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500102}" Value=""/>
+        <Property Name="+Serial Number (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500103}" Value=""/>
+        <Property Name="+Manufacturer (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500104;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500105}" Value=""/>
+        <Property Name="+KVA (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500106}" Value=""/>
+        <Property Name="+Impedance (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500107}" Value=""/>
+        <Property Name="+Primary Voltage 1 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500108}" Value=""/>
+        <Property Name="+Primary Voltage 2 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500109}" Value=""/>
+        <Property Name="+Secondary Voltage 1 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500110}" Value=""/>
+        <Property Name="+Secondary Voltage 2 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500111}" Value=""/>
+        <Property Name="+PCB (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500112}" Value=""/>
+        <Property Name="+Phase (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314500113}" Value=""/>
+        <Property Name="+Lock for Cover" Type="{Tab=Exterior;Type=string;Ano=314500001;Items=OK,Lock Replaced}" Value=""/>
+        <Property Name="+ACCESS" Type="{Tab=Exterior;Type=string;Ano=314500003;Items=OK,Problem,Tree/Shrub,Fence,Other (See Notes)}" Value=""/>
+        <Property Name="+Radial" Type="{Tab=Exterior;Type=string;Ano=314500008;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Lighting" Type="{Tab=Interior;Type=string;Ano=314500015;Items=OK,Repaired/Replaced,Other(see notes)}" Value=""/>
+        <Property Name="+Drainage" Type="{Tab=Interior;Type=string;Ano=314500016;Items=OK,Flooded,Other (See Notes)}" Value=""/>
+        <Property Name="+Neutral Star Point" Type="{Tab=Interior;Type=string;Ano=314500017;Items=None,num of Neutral Conductors equals Phase C,num of Neutral Conductors less than Phas}" Value=""/>
+        <Property Name="+Ventilation" Type="{Tab=Interior;Type=string;Ano=314500018;Items=OK,Blocked,Needs Repairs,Repaired on Site,Other (see notes)}" Value=""/>
+        <Property Name="+Primary Cable Size" Type="{Tab=Interior;Type=string;Ano=314500019}" Value=""/>
+        <Property Name="+Secondary Cable Size" Type="{Tab=Interior;Type=string;Ano=314500020}" Value=""/>
+        <Property Name="+Oil Leak" Type="{Tab=Oil Leaks;Type=string;Ano=314500021;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Seam" Type="{Tab=Oil Leaks;Type=string;Ano=314500022;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Bushing" Type="{Tab=Oil Leaks;Type=string;Ano=314500023;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+TX Required (Grass Killed)" Type="{Type=boolean;Ano=314500024;Visible=False}" Value=""/>
+        <Property Name="+Plug" Type="{Tab=Oil Leaks;Type=string;Ano=314500025;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Tap Changer (Oil Leak)" Type="{Tab=Oil Leaks;Type=string;Ano=314500026;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Other Oil Leaks (See Notes)" Type="{Tab=Oil Leaks;Type=string;Ano=314500027;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Elbows Switching Restrictions" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500028}" Value=""/>
+        <Property Name="+Tracking None" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500029;Items=YES,NO;Visible=False}" Value=""/>
+        <Property Name="+Tracking Fuses" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500030;Items=YES,NO;Visible=False}" Value=""/>
+        <Property Name="+Tracking Others (See Notes)" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500031;Items=YES,NO;Visible=False}" Value=""/>
+        <Property Name="+Missing Bleeder Wires None" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500032;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires Insert" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500033;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires Elbow" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500034;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires -1" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500035;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires -2" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500036;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Missing Bleeder Wires -3" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500037;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Fault Indicators" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500038;Items=None,-1 Elbow,-2 Elbow}" Value=""/>
+        <Property Name="+Lighting Arrestors" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500039;Items=None,-1 Elbow,-2 Elbow}" Value=""/>
+        <Property Name="+-1 Elbow Infrared" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500040}" Value=""/>
+        <Property Name="+-2 Elbow Infrared" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500041}" Value=""/>
+        <Property Name="+Corrosion" Type="{Tab=Elbows/Multi-Taps;Type=string;Ano=314500005;Items=None,Rust Through,Surface Rust,Layers of Rust}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=314500042;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=314500043;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=314500044;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Requires Nomenclature" Type="{Tab=Maintenance;Type=string;Ano=314500045;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Housekeeping" Type="{Tab=Maintenance;Type=string;Ano=314500046;Items=None,Cleaning/Dusting,Other (see notes)}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=314500047}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=314500048;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=314500049;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=314500050;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=314500051;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=314500052;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=314500053;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=314500054;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+HEX_STATUS" Type="{Type=string;Ano=314500055;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+  <NamedSketch Name="Single Phase Polemount Transformer">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="314"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Single Phase Polemount TX for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Site Number}" Value=""/>
+        <Property Name="+User" Type="{Tab=TX Info;Type=string;Ano=314700056}" Value=""/>
+        <Property Name="+Location" Type="{Tab=TX Info;Type=string;Ano=314700057;Required=True;ReadOnly=True}" Value="{Ano=314010002}"/>
+        <Property Name="+Street Number" Type="{Tab=TX Info;Type=string;Ano=314700058}" Value="{Ano=310019}"/>
+        <Property Name="+Street Name" Type="{Tab=TX Info;Type=string;Ano=314700059}" Value="{Ano=310020}"/>
+        <Property Name="+Location Info" Type="{Tab=TX Info;Type=string;Ano=314700060}" Value=""/>
+        <Property Name="+Pole Number" Type="{Tab=TX Info;Type=string;Ano=314700061}" Value="{Ano=310017}"/>
+        <Property Name="+Control Number" Type="{Tab=TX Info;Type=string;Ano=314700062}" Value=""/>
+        <Property Name="+Transformer Type" Type="{Tab=TX Info;Type=string;Ano=314700063}" Value="{Ano=314010012}"/>
+        <Property Name="+Serial Number" Type="{Tab=TX Info;Type=string;Ano=314700064}" Value=""/>
+        <Property Name="+Manufacturer" Type="{Tab=TX Info;Type=string;Ano=314700065;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date" Type="{Tab=TX Info;Type=string;Ano=314700066}" Value=""/>
+        <Property Name="+KVA" Type="{Tab=TX Info;Type=string;Ano=314700067}" Value="{Ano=314010004}"/>
+        <Property Name="+Impedance" Type="{Tab=TX Info;Type=string;Ano=314700068}" Value=""/>
+        <Property Name="+Primary Voltage 1" Type="{Tab=TX Info;Type=string;Ano=314700069}" Value=""/>
+        <Property Name="+Primary Voltage 2" Type="{Tab=TX Info;Type=string;Ano=314700070}" Value=""/>
+        <Property Name="+Secondary Voltage 1" Type="{Tab=TX Info;Type=string;Ano=314700071}" Value=""/>
+        <Property Name="+Secondary Voltage 2" Type="{Tab=TX Info;Type=string;Ano=314700072}" Value=""/>
+        <Property Name="+PCB" Type="{Tab=TX Info;Type=string;Ano=314700073}" Value=""/>
+        <Property Name="+Phase" Type="{Tab=TX Info;Type=string;Ano=314700074}" Value="{Ano=300003}"/>
+        <Property Name="+Grounding (Neutral to TX)" Type="{Tab=Exterior;Type=string;Ano=314700144;Items=Good,Needs Repair}" Value=""/>
+        <Property Name="+Grounding Arrester" Type="{Tab=Exterior;Type=string;Ano=314700145;Items=Good,Needs Repair}" Value=""/>
+        <Property Name="+Internal Fault Detector" Type="{Tab=Exterior;Type=string;Ano=314700146;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Animal Guard" Type="{Tab=Exterior;Type=string;Ano=314700147;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Primary Bushing Type" Type="{Tab=Exterior;Type=string;Ano=314700148;Items=125 BIL,170 BIL}" Value=""/>
+        <Property Name="+Cutout Type" Type="{Tab=Exterior;Type=string;Ano=314700149;Items=POLYMER,PORCELAIN}" Value=""/>
+        <Property Name="+Cutout Condition" Type="{Tab=Exterior;Type=string;Ano=314700150;Items=Good,Needs Replacement}" Value=""/>
+        <Property Name="+Cutout Bracket Type" Type="{Tab=Exterior;Type=string;Ano=314700151;Items=FIBERGLASS,METAL,OTHER (SEE NOTES)}" Value=""/>
+        <Property Name="+Evidence of Flashover" Type="{Tab=Exterior;Type=string;Ano=314700152;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+TX Mounting Bracket" Type="{Tab=Exterior;Type=string;Ano=314700153;Items=Good,Needs Repair,Other (See Notes)}" Value=""/>
+        <Property Name="+Secondary Connection" Type="{Tab=Exterior;Type=string;Ano=314700154;Items=Good,Needs Repair}" Value=""/>
+        <Property Name="+Vegetation Interference" Type="{Tab=Exterior;Type=string;Ano=314700155;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Corrosion" Type="{Tab=Exterior;Type=string;Ano=314700005;Items=None,Rust Through,Surface Rust,Layers of Rust}" Value=""/>
+        <Property Name="+Radial" Type="{Type=boolean;Ano=314700008;Visible=False}" Value=""/>
+        <Property Name="+Oil Leak" Type="{Tab=Exterior;Type=string;Ano=314700021;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=314700042;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=314700043;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=314700044;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Requires Nomenclature" Type="{Tab=Maintenance;Type=string;Ano=314700045;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=314700047}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=314700048;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=314700049;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=314700050;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=314700051;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=314700052;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=314700053;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=314700054;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+HEX_STATUS" Type="{Type=string;Ano=314700055;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+  <NamedSketch Name="Three Phase Polemount Transformer">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="314"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Three Phase Polemount TX for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Site Number}" Value=""/>
+        <Property Name="+User" Type="{Tab=TX Info;Type=string;Ano=314800056}" Value=""/>
+        <Property Name="+Location" Type="{Tab=TX Info;Type=string;Ano=314800057;Required=True;ReadOnly=True}" Value="{Ano=314010002}"/>
+        <Property Name="+Street Number" Type="{Tab=TX Info;Type=string;Ano=314800058}" Value="{Ano=310019}"/>
+        <Property Name="+Street Name" Type="{Tab=TX Info;Type=string;Ano=314800059}" Value="{Ano=310020}"/>
+        <Property Name="+Location Info" Type="{Tab=TX Info;Type=string;Ano=314800060}" Value=""/>
+        <Property Name="+Pole Number" Type="{Tab=TX Info;Type=string;Ano=314800061}" Value="{Ano=310017}"/>
+        <Property Name="+Transformer Type" Type="{Tab=TX Info;Type=string;Ano=314800063}" Value="{Ano=314010012}"/>
+        <Property Name="+Phase" Type="{Tab=TX Info;Type=string;Ano=314800074}" Value="{Ano=300003}"/>
+        <Property Name="+Control Number (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800075}" Value=""/>
+        <Property Name="+Transformer Type (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800076}" Value=""/>
+        <Property Name="+Serial Number (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800077}" Value=""/>
+        <Property Name="+Manufacturer (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800078;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800079}" Value=""/>
+        <Property Name="+KVA (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800080}" Value=""/>
+        <Property Name="+Impedance (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800081}" Value=""/>
+        <Property Name="+Primary Voltage 1 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800082}" Value=""/>
+        <Property Name="+Primary Voltage 2 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800083}" Value=""/>
+        <Property Name="+Secondary Voltage 1 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800084}" Value=""/>
+        <Property Name="+Secondary Voltage 2 (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800085}" Value=""/>
+        <Property Name="+PCB (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800086}" Value=""/>
+        <Property Name="+Phase (Phase R)" Type="{Tab=Phase Red;Type=string;Ano=314800087}" Value=""/>
+        <Property Name="+Control Number (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800088}" Value=""/>
+        <Property Name="+Transformer Type (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800089}" Value=""/>
+        <Property Name="+Serial Number (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800090}" Value=""/>
+        <Property Name="+Manufacturer (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800091;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800092}" Value=""/>
+        <Property Name="+KVA (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800093}" Value=""/>
+        <Property Name="+Impedance (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800094}" Value=""/>
+        <Property Name="+Primary Voltage 1 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800095}" Value=""/>
+        <Property Name="+Primary Voltage 2 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800096}" Value=""/>
+        <Property Name="+Secondary Voltage 1 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800097}" Value=""/>
+        <Property Name="+Secondary Voltage 2 (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800098}" Value=""/>
+        <Property Name="+PCB (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800099}" Value=""/>
+        <Property Name="+Phase (Phase W)" Type="{Tab=Phase White;Type=string;Ano=314800100}" Value=""/>
+        <Property Name="+Control Number (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800101}" Value=""/>
+        <Property Name="+Transformer Type (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800102}" Value=""/>
+        <Property Name="+Serial Number (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800103}" Value=""/>
+        <Property Name="+Manufacturer (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800104;Items=ACME,ALLIANCE,APB,ASEA BROWN BOVERI,CAM TRAN,CANADIAN ELECTRICAL SERVICES,CANADIAN GENERAL ELECTRIC,CANSFIELD ELECTRIC,CARTE,CARTIER,COMMONWEALTH,ENGLISH ELECTRIC,FEDERAL PIONEER,FERRANTI PACKARD,GENERAL ELECTRIC,GRAFTON UTILITY,H.E.P.C.,HAMMOND MFG.,MCGRAW,MCGRAW EDISON,MOLONEY,NORTHERN ELECTRIC,PIONEER ELECTRIC,PORTER,R.T.E.,RELIANCE,SCHNEIDER CANADA,SUPREME POWER,TRANSCANADA,WESTINGHOUSE,ABB,CGE,JOSLYAN,KUHLMAN,N/A,OTHER,SIEMANS,UNKNOWN,BEFCO,BEPCO,BROWN,BROWN BOVERI,CANSFIELD,CES,COLMAN,COMMONWEALTH EDISON,CW,EP ,ERMCO,FOSTER,H K PORTER,HAWKER SIDDLEY,JIMS ELECTRIC,MARKHAM ELECTRIC,NORELCO,NORRACO,NORTH,ONAN,PACKARD BELL,PAWEL,PIRELLI,PLYGN,RTE,SQUARE D,SUPREME ELECTRIC,SURELCO,TRANSELECTRIX,VOLTA WERK,WODEN,T &amp; R ELECTRIC,3M}" Value=""/>
+        <Property Name="+Manufacturer Date (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800105}" Value=""/>
+        <Property Name="+KVA (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800106}" Value=""/>
+        <Property Name="+Impedance (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800107}" Value=""/>
+        <Property Name="+Primary Voltage 1 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800108}" Value=""/>
+        <Property Name="+Primary Voltage 2 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800109}" Value=""/>
+        <Property Name="+Secondary Voltage 1 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800110}" Value=""/>
+        <Property Name="+Secondary Voltage 2 (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800111}" Value=""/>
+        <Property Name="+PCB (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800112}" Value=""/>
+        <Property Name="+Phase (Phase B)" Type="{Tab=Phase Blue;Type=string;Ano=314800113}" Value=""/>
+        <Property Name="+Tank Corrosion (R)" Type="{Tab=Phase Red;Type=string;Ano=314800114;Items=None,Rust Through,Surface Rust,Layers of Rust}" Value=""/>
+        <Property Name="+Oil Leak (R)" Type="{Tab=Phase Red;Type=string;Ano=314800115;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Internal Fault Detector (R)" Type="{Tab=Phase Red;Type=string;Ano=314800116;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Animal Guard (R)" Type="{Tab=Phase Red;Type=string;Ano=314800117;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Primary Bushing Type (R)" Type="{Tab=Phase Red;Type=string;Ano=314800118;Items=125 BIL,170 BIL}" Value=""/>
+        <Property Name="+Cutout Type (R)" Type="{Tab=Phase Red;Type=string;Ano=314800119;Items=POLYMER,PORCELAIN}" Value=""/>
+        <Property Name="+Cutout Condition (R)" Type="{Tab=Phase Red;Type=string;Ano=314800120;Items=Good,Needs Replacement}" Value=""/>
+        <Property Name="+Cutout Bracket Type (R)" Type="{Tab=Phase Red;Type=string;Ano=314800121;Items=FIBERGLASS,METAL,OTHER (SEE NOTES)}" Value=""/>
+        <Property Name="+Evidence of Flashover (R)" Type="{Tab=Phase Red;Type=string;Ano=314800122;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Req Nomenclature (R)" Type="{Tab=Phase Red;Type=string;Ano=314800123;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Tank Corrosion (W)" Type="{Tab=Phase White;Type=string;Ano=314800124;Items=None,Rust Through,Surface Rust,Layers of Rust}" Value=""/>
+        <Property Name="+Oil Leak (W)" Type="{Tab=Phase White;Type=string;Ano=314800125;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Internal Fault Detector (W)" Type="{Tab=Phase White;Type=string;Ano=314800126;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Animal Guard (W)" Type="{Tab=Phase White;Type=string;Ano=314800127;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Primary Bushing Type (W)" Type="{Tab=Phase White;Type=string;Ano=314800128;Items=125 BIL,170 BIL}" Value=""/>
+        <Property Name="+Cutout Type (W)" Type="{Tab=Phase White;Type=string;Ano=314800129;Items=POLYMER,PORCELAIN}" Value=""/>
+        <Property Name="+Cutout Condition (W)" Type="{Tab=Phase White;Type=string;Ano=314800130;Items=Good,Needs Replacement}" Value=""/>
+        <Property Name="+Cutout Bracket Type (W)" Type="{Tab=Phase White;Type=string;Ano=314800131;Items=FIBERGLASS,METAL,OTHER (SEE NOTES)}" Value=""/>
+        <Property Name="+Evidence of Flashover (W)" Type="{Tab=Phase White;Type=string;Ano=314800132;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Req Nomenclature (W)" Type="{Tab=Phase White;Type=string;Ano=314800133;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Tank Corrosion (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800134;Items=None,Rust Through,Surface Rust,Layers of Rust}" Value=""/>
+        <Property Name="+Oil Leak (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800135;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Internal Fault Detector (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800136;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Animal Guard (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800137;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Primary Bushing Type (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800138;Items=125 BIL,170 BIL}" Value=""/>
+        <Property Name="+Cutout Type (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800139;Items=POLYMER,PORCELAIN}" Value=""/>
+        <Property Name="+Cutout Condition (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800140;Items=Good,Needs Replacement}" Value=""/>
+        <Property Name="+Cutout Bracket Type (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800141;Items=FIBERGLASS,METAL,OTHER (SEE NOTES)}" Value=""/>
+        <Property Name="+Evidence of Flashover (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800142;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Req Nomenclature (B)" Type="{Tab=Phase Blue;Type=string;Ano=314800143;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Grounding (Neutral to TX)" Type="{Tab=Exterior;Type=string;Ano=314800144;Items=Good,Needs Repair}" Value=""/>
+        <Property Name="+Grounding Arrester" Type="{Tab=Exterior;Type=string;Ano=314800145;Items=Good,Needs Repair}" Value=""/>
+        <Property Name="+TX Mounting Bracket" Type="{Tab=Exterior;Type=string;Ano=314800153;Items=Good,Needs Repair,Other (See Notes)}" Value=""/>
+        <Property Name="+Secondary Connection" Type="{Tab=Exterior;Type=string;Ano=314800154;Items=Good,Needs Repair}" Value=""/>
+        <Property Name="+Vegetation Interference" Type="{Tab=Exterior;Type=string;Ano=314800155;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Corrosion" Type="{Type=string;Ano=314800005;Visible=False}" Value=""/>
+        <Property Name="+Radial" Type="{Type=boolean;Ano=314800008;Visible=False}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=314800042;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=314800043;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=314800044;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Requires Nomenclature" Type="{Type=boolean;Ano=314800045;Visible=False}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=314800047}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=314800048;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=314800049;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=314800050;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=314800051;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=314800052;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=314800053;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=314800054;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+HEX_STATUS" Type="{Type=string;Ano=314800055;Required=True;ReadOnly=True}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+  <NamedSketch Name="Switch Gear">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="327"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Switch Gear for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Site Number}" Value=""/>
+        <!-- Below extracted from generateGMobileLinkAttrib tool -->
+        <Property Name="+Site Number" Type="{Tab=Switch Gear Info;Type=string;Ano=327600088}" Value="{Ano=327010002}"/>
+        <Property Name="+User" Type="{Tab=Switch Gear Info;Type=string;Ano=327600089}" Value=""/>
+        <Property Name="+Location" Type="{Tab=Switch Gear Info;Type=string;Ano=327600090;Items=Front Lot,Rear Lot,Side Lot,Below Grade,Above Grade,Inside Building,Other (see notes)}" Value=""/>
+        <Property Name="+Street Name" Type="{Tab=Switch Gear Info;Type=string;Ano=327600091}" Value="{Ano=310020}"/>
+        <Property Name="+Operating Voltage" Type="{Tab=Switch Gear Info;Type=string;Ano=327600092;Items=27.6kV,13.8kV,8.32kV,4.16kV}" Value="{Ano=300011}"/>
+        <Property Name="+Control Number" Type="{Tab=Switch Gear Info;Type=string;Ano=327600093}" Value=""/>
+        <Property Name="+Serial Number" Type="{Tab=Switch Gear Info;Type=string;Ano=327600094}" Value=""/>
+        <Property Name="+Switchgear Type" Type="{Tab=Switch Gear Info;Type=string;Ano=327600095}" Value="{Ano=327010001}"/>
+        <Property Name="+Rated Voltage" Type="{Tab=Switch Gear Info;Type=string;Ano=327600096;Items=27.6kV,13.8kV,8.32kV,4.16kV}" Value=""/>
+        <Property Name="+Manufacturer Date" Type="{Tab=Switch Gear Info;Type=string;Ano=327600097}" Value="{Ano=310003}"/>
+        <Property Name="+Manufacturer" Type="{Tab=Switch Gear Info;Type=string;Picklist=True;Restricted=True;Ano=327600098}" Value=""/>
+        <Property Name="+Cooling Type" Type="{Tab=Switch Gear Info;Type=string;Ano=327600099;Items=Oil,Air,SF6,Other (See Notes)}" Value=""/>
+        <Property Name="+Oil Content" Type="{Tab=Switch Gear Info;Type=string;Ano=327600100}" Value=""/>
+        <Property Name="+Oil Unit" Type="{Tab=Switch Gear Info;Type=string;Ano=327600101}" Value=""/>
+        <Property Name="+Access" Type="{Tab=Exterior;Type=string;Ano=327600102;Items=OK,Problem,Tree/Shrub,Fence,Other (See Notes)}" Value=""/>
+        <Property Name="+Cover Lock" Type="{Tab=Exterior;Type=string;Ano=327600103;Items=OK,Lock Replaced}" Value=""/>
+        <Property Name="+Penta Bolt" Type="{Tab=Exterior;Type=string;Ano=327600104;Items=Non Penta Design,OK,Repaired on Site,Needs Repair}" Value=""/>
+        <Property Name="+Base Details" Type="{Tab=Exterior;Type=string;Ano=327600105;Items=Concrete Cap,Concrete Well,Fibreglass Well,Foundation Req'd,Other (See Notes)}" Value=""/>
+        <Property Name="+Condition of Base" Type="{Tab=Exterior;Type=string;Ano=327600106;Items=Good,Fair,Needs Repair,Other (See Notes)}" Value=""/>
+        <Property Name="+Corrosion" Type="{Tab=Exterior;Type=string;Ano=327600107;Items=None,Surface Rust,Layers of Rust,Rust Through,Rust Treatment Required,Other (See Notes)}" Value=""/>
+        <Property Name="+Damage" Type="{Tab=Exterior;Type=string;Ano=327600108;Items=None,Graffitti Removal,Painting Required,Sticker Installed,Other (See Notes)}" Value=""/>
+        <Property Name="+Base Dimension 1 (inches)" Type="{Tab=Exterior;Type=string;Ano=327600109}" Value=""/>
+        <Property Name="+Base Dimension 2 (inches)" Type="{Tab=Exterior;Type=string;Ano=327600110}" Value=""/>
+        <Property Name="+Grading" Type="{Tab=Exterior;Type=string;Ano=327600111;Items=OK,Problem,Low,High,Other(see notes)}" Value=""/>
+        <Property Name="+Grading High" Type="{Tab=Exterior;Type=string;Ano=327600112}" Value=""/>
+        <Property Name="+Grading Low" Type="{Tab=Exterior;Type=string;Ano=327600113}" Value=""/>
+        <Property Name="+Comp A Switch or Fuse" Type="{Tab=Compartment A;Type=string;Ano=327600114}" Value=""/>
+        <Property Name="+Comp A Switch Number" Type="{Tab=Compartment A;Type=string;Ano=327600115}" Value=""/>
+        <Property Name="+Comp A Fuse Number" Type="{Tab=Compartment A;Type=string;Ano=327600116}" Value=""/>
+        <!--<Property Name="+Comp A Switch TYPE" Type="{Tab=Compartment A;Type=string;Ano=327600117}" Value=""/>-->
+        <!--<Property Name="+Comp A Fuse Type" Type="{Tab=Compartment A;Type=string;Ano=327600118}" Value=""/>-->
+        <Property Name="+Comp A Fuse Size" Type="{Tab=Compartment A;Type=string;Ano=327600119}" Value=""/>
+        <Property Name="+Comp A Elbow Sw Restrict" Type="{Tab=Compartment A;Type=string;Ano=327600120;Items=None,Poor Primary Slack,Short Deck,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp A SCADA" Type="{Tab=Compartment A;Type=string;Ano=327600121;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <!--<Property Name="+Comp A Tracking" Type="{Tab=Compartment A;Type=string;Ano=327600122}" Value=""/>-->
+        <Property Name="+Comp A Tracking-Barrier" Type="{Tab=Compartment A;Type=string;Ano=327600151;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Tracking-Insulator" Type="{Tab=Compartment A;Type=string;Ano=327600153;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Tracking-Termination" Type="{Tab=Compartment A;Type=string;Ano=327600155;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Tracking-Switch" Type="{Tab=Compartment A;Type=string;Ano=327600154;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Tracking-Fuse" Type="{Tab=Compartment A;Type=string;Ano=327600152;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Fault Indicator" Type="{Tab=Compartment A;Type=string;Ano=327600123;Items=None,Single,Cluster}" Value=""/>
+        <Property Name="+Comp A Arrestor" Type="{Tab=Compartment A;Type=string;Ano=327600124;Items=None,On Concentric Neutral,Line,Floating,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp A Leaking" Type="{Tab=Compartment A;Type=string;Ano=327600125;Items=None,Bushing,Seam,Plug,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp A AMbient Tank Temperature" Type="{Tab=Compartment A;Type=string;Ano=327600126}" Value=""/>
+        <Property Name="+Comp A Red Phase Temperature" Type="{Tab=Compartment A;Type=string;Ano=327600127}" Value=""/>
+        <Property Name="+Comp A White Phase Temperature" Type="{Tab=Compartment A;Type=string;Ano=327600128}" Value=""/>
+        <Property Name="+Comp A Blue Phase Temperature" Type="{Tab=Compartment A;Type=string;Ano=327600129}" Value=""/>
+        <Property Name="+Comp A Missing Bleeder Wire - None" Type="{Tab=Compartment A;Type=string;Ano=327600130;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Missing Bleeder Wire - Elbow" Type="{Tab=Compartment A;Type=string;Ano=327600131;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Missing Bleeder Wire - Insert" Type="{Tab=Compartment A;Type=string;Ano=327600001;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Fibreglass Barrier" Type="{Tab=Compartment A;Type=string;Ano=327600002;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Pressure Relief Device" Type="{Tab=Compartment A;Type=string;Ano=327600003;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Long Inserts" Type="{Tab=Compartment A;Type=string;Ano=327600004;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp A Reqd Nomenclature/Decals" Type="{Tab=Compartment A;Type=string;Ano=327600005;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Switch or Fuse" Type="{Tab=Compartment B;Type=string;Ano=327600006}" Value=""/>
+        <Property Name="+Comp B Switch Number" Type="{Tab=Compartment B;Type=string;Ano=327600007}" Value=""/>
+        <Property Name="+Comp B Fuse Number" Type="{Tab=Compartment B;Type=string;Ano=327600008}" Value=""/>
+        <!--<Property Name="+Comp B Switch TYPE" Type="{Tab=Compartment B;Type=string;Ano=327600009}" Value=""/>-->
+        <!--<Property Name="+Comp B Fuse Type" Type="{Tab=Compartment B;Type=string;Ano=327600010}" Value=""/>-->
+        <Property Name="+Comp B Fuse Size" Type="{Tab=Compartment B;Type=string;Ano=327600011}" Value=""/>
+        <Property Name="+Comp B Elbow Sw Restrict" Type="{Tab=Compartment B;Type=string;Ano=327600012;Items=None,Poor Primary Slack,Short Deck,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp B SCADA" Type="{Tab=Compartment B;Type=string;Ano=327600013;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <!--<Property Name="+Comp B Tracking" Type="{Tab=Compartment B;Type=string;Ano=327600014}" Value=""/>-->
+        <Property Name="+Comp B Tracking-Barrier" Type="{Tab=Compartment B;Type=string;Ano=327600156;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Tracking-Insulator" Type="{Tab=Compartment B;Type=string;Ano=327600158;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Tracking-Termination" Type="{Tab=Compartment B;Type=string;Ano=327600160;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Tracking-Switch" Type="{Tab=Compartment B;Type=string;Ano=327600159;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Tracking-Fuse" Type="{Tab=Compartment B;Type=string;Ano=327600157;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Fault Indicator" Type="{Tab=Compartment B;Type=string;Ano=327600015;Items=None,Single,Cluster}" Value=""/>
+        <Property Name="+Comp B Arrestor" Type="{Tab=Compartment B;Type=string;Ano=327600016;Items=None,On Concentric Neutral,Line,Floating,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp B Leaking" Type="{Tab=Compartment B;Type=string;Ano=327600017;Items=None,Bushing,Seam,Plug,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp B AMbient Tank Temperature" Type="{Tab=Compartment B;Type=string;Ano=327600018}" Value=""/>
+        <Property Name="+Comp B Red Phase Temperature" Type="{Tab=Compartment B;Type=string;Ano=327600019}" Value=""/>
+        <Property Name="+Comp B White Phase Temperature" Type="{Tab=Compartment B;Type=string;Ano=327600020}" Value=""/>
+        <Property Name="+Comp B Blue Phase Temperature" Type="{Tab=Compartment B;Type=string;Ano=327600021}" Value=""/>
+        <Property Name="+Comp B Missing Bleeder Wire - None" Type="{Tab=Compartment B;Type=string;Ano=327600022;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Missing Bleeder Wire - Elbow" Type="{Tab=Compartment B;Type=string;Ano=327600023;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Missing Bleeder Wire - Insert" Type="{Tab=Compartment B;Type=string;Ano=327600024;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Fibreglass Barrier" Type="{Tab=Compartment B;Type=string;Ano=327600025;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Pressure Relief Device" Type="{Tab=Compartment B;Type=string;Ano=327600026;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Long Inserts" Type="{Tab=Compartment B;Type=string;Ano=327600027;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp B Reqd Nomenclature/Decals" Type="{Tab=Compartment B;Type=string;Ano=327600028;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Switch or Fuse" Type="{Tab=Compartment C;Type=string;Ano=327600029}" Value=""/>
+        <Property Name="+Comp C Switch Number" Type="{Tab=Compartment C;Type=string;Ano=327600030}" Value=""/>
+        <Property Name="+Comp C Fuse Number" Type="{Tab=Compartment C;Type=string;Ano=327600031}" Value=""/>
+        <!--<Property Name="+Comp C Switch TYPE" Type="{Tab=Compartment C;Type=string;Ano=327600032}" Value=""/>-->
+        <!--<Property Name="+Comp C Fuse Type" Type="{Tab=Compartment C;Type=string;Ano=327600033}" Value=""/>-->
+        <Property Name="+Comp C Fuse Size" Type="{Tab=Compartment C;Type=string;Ano=327600034}" Value=""/>
+        <Property Name="+Comp C Elbow Sw Restrict" Type="{Tab=Compartment C;Type=string;Ano=327600035;Items=None,Poor Primary Slack,Short Deck,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp C SCADA" Type="{Tab=Compartment C;Type=string;Ano=327600036;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <!--<Property Name="+Comp C Tracking" Type="{Tab=Compartment C;Type=string;Ano=327600037}" Value=""/>-->
+        <Property Name="+Comp C Tracking-Barrier" Type="{Tab=Compartment C;Type=string;Ano=327600161;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Tracking-Insulator" Type="{Tab=Compartment C;Type=string;Ano=327600163;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Tracking-Termination" Type="{Tab=Compartment C;Type=string;Ano=327600165;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Tracking-Switch" Type="{Tab=Compartment C;Type=string;Ano=327600164;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Tracking-Fuse" Type="{Tab=Compartment C;Type=string;Ano=327600165;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Fault Indicator" Type="{Tab=Compartment C;Type=string;Ano=327600038;Items=None,Single,Cluster}" Value=""/>
+        <Property Name="+Comp C Arrestor" Type="{Tab=Compartment C;Type=string;Ano=327600039;Items=None,On Concentric Neutral,Line,Floating,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp C Leaking" Type="{Tab=Compartment C;Type=string;Ano=327600040;Items=None,Bushing,Seam,Plug,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp C AMbient Tank Temperature" Type="{Tab=Compartment C;Type=string;Ano=327600041}" Value=""/>
+        <Property Name="+Comp C Red Phase Temperature" Type="{Tab=Compartment C;Type=string;Ano=327600042}" Value=""/>
+        <Property Name="+Comp C White Phase Temperature" Type="{Tab=Compartment C;Type=string;Ano=327600043}" Value=""/>
+        <Property Name="+Comp C Blue Phase Temperature" Type="{Tab=Compartment C;Type=string;Ano=327600044}" Value=""/>
+        <Property Name="+Comp C Missing Bleeder Wire - None" Type="{Tab=Compartment C;Type=string;Ano=327600045;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Missing Bleeder Wire - Elbow" Type="{Tab=Compartment C;Type=string;Ano=327600046;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Missing Bleeder Wire - Insert" Type="{Tab=Compartment C;Type=string;Ano=327600047;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Fibreglass Barrier" Type="{Tab=Compartment C;Type=string;Ano=327600048;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Pressure Relief Device" Type="{Tab=Compartment C;Type=string;Ano=327600049;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Long Inserts" Type="{Tab=Compartment C;Type=string;Ano=327600050;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp C Reqd Nomenclature/Decals" Type="{Tab=Compartment C;Type=string;Ano=327600051;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Switch or Fuse" Type="{Tab=Compartment D;Type=string;Ano=327600052}" Value=""/>
+        <Property Name="+Comp D Switch Number" Type="{Tab=Compartment D;Type=string;Ano=327600053}" Value=""/>
+        <Property Name="+Comp D Fuse Number" Type="{Tab=Compartment D;Type=string;Ano=327600054}" Value=""/>
+        <!--<Property Name="+Comp D Switch TYPE" Type="{Tab=Compartment D;Type=string;Ano=327600055}" Value=""/>-->
+        <!--<Property Name="+Comp D Fuse Type" Type="{Tab=Compartment D;Type=string;Ano=327600056}" Value=""/>-->
+        <Property Name="+Comp D Fuse Size" Type="{Tab=Compartment D;Type=string;Ano=327600057}" Value=""/>
+        <Property Name="+Comp D Elbow Sw Restrict" Type="{Tab=Compartment D;Type=string;Ano=327600058;Items=None,Poor Primary Slack,Short Deck,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp D SCADA" Type="{Tab=Compartment D;Type=string;Ano=327600059;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <!--<Property Name="+Comp D Tracking" Type="{Tab=Compartment D;Type=string;Ano=327600060}" Value=""/>-->
+        <Property Name="+Comp D Tracking-Barrier" Type="{Tab=Compartment D;Type=string;Ano=327600166;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Tracking-Insulator" Type="{Tab=Compartment D;Type=string;Ano=327600168;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Tracking-Termination" Type="{Tab=Compartment D;Type=string;Ano=327600170;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Tracking-Switch" Type="{Tab=Compartment D;Type=string;Ano=327600169;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Tracking-Fuse" Type="{Tab=Compartment D;Type=string;Ano=327600167;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Fault Indicator" Type="{Tab=Compartment D;Type=string;Ano=327600061;Items=None,Single,Cluster}" Value=""/>
+        <Property Name="+Comp D Arrestor" Type="{Tab=Compartment D;Type=string;Ano=327600062;Items=None,On Concentric Neutral,Line,Floating,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp D Leaking" Type="{Tab=Compartment D;Type=string;Ano=327600063;Items=None,Bushing,Seam,Plug,Other (See Notes)}" Value=""/>
+        <Property Name="+Comp D AMbient Tank Temperature" Type="{Tab=Compartment D;Type=string;Ano=327600064}" Value=""/>
+        <Property Name="+Comp D Red Phase Temperature" Type="{Tab=Compartment D;Type=string;Ano=327600065}" Value=""/>
+        <Property Name="+Comp D White Phase Temperature" Type="{Tab=Compartment D;Type=string;Ano=327600066}" Value=""/>
+        <Property Name="+Comp D Blue Phase Temperature" Type="{Tab=Compartment D;Type=string;Ano=327600067}" Value=""/>
+        <Property Name="+Comp D Missing Bleeder Wire - None" Type="{Tab=Compartment D;Type=string;Ano=327600068;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Missing Bleeder Wire - Elbow" Type="{Tab=Compartment D;Type=string;Ano=327600069;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Missing Bleeder Wire - Insert" Type="{Tab=Compartment D;Type=string;Ano=327600070;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Fibreglass Barrier" Type="{Tab=Compartment D;Type=string;Ano=327600071;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Pressure Relief Device" Type="{Tab=Compartment D;Type=string;Ano=327600072;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Long Inserts" Type="{Tab=Compartment D;Type=string;Ano=327600073;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comp D Reqd Nomenclature/Decals" Type="{Tab=Compartment D;Type=string;Ano=327600074;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=327600075;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=327600076;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=327600077;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Control Number Maintenance" Type="{Tab=Maintenance;Type=string;Ano=327600078;Items=OK,Missing,Installed New Number}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=327600079}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=327600080;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=327600081;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=327600082;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=327600083;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=327600084;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=327600085;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=327600086;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+HEX Status" Type="{Type=string;Ano=327600087;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+</RedlineDocument>
+
+
+
+
+
+
+
+

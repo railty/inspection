@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: sning
+  password: sning
+
+development:
+  <<: *default
+  database: inspection_dev
+
+test:
+  <<: *default
+  database: inspection_test
+
+production:
+  <<: *default
+  database: inspection_prod

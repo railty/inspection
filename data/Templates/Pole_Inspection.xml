@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RedlineDocument xmlns="urn:HexMobileClient.xsd" ProgID="GNetClient.GRedlineDisplayCtrl" Version="1">
+  <Category Name="Inspect" Username="Inspect" IsDisplayed="1" DisplayLevel="10" Operations="AllOperations" DefaultMode="DisplayOnly" Modes="AllowAllModes" EventsFired="Select,ModeChange,Delete,Cancel,LButtonDown,LButtonUp,LButtonDblClick,PlacementStart,PlacementEnd,RButtonDown,GeometryChange" LineColor="255" LineWidth="2" LineStyle="0" FillColor="16777215" FillHatch="4" FillStyle="1" FontStyle="Regular" FontName="Arial" FontSize="12" FontColor="0" TextValue="" SymbolFontCharset="1" SymbolFontName="G_MapPins" SymbolSize="20" SymbolColor="255" SymbolValue="I" ViewScaleDependent="0"/>
+  <Properties>
+    <Property Name="Job" Type="string" Value="FieldDataCollection"/>
+    <Property Name="Notes" Type="string" Value=""/>
+    <Property Name="Template" Type="{Visible=False}" Value=""/>
+  </Properties>
+  <NamedSketch Name="Wood Pole">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="208"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Wood Pole for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Location}" Value=""/>
+        <Property Name="+User" Type="{Tab=Pole Info;Type=string;Ano=208100005}" Value=""/>
+        <Property Name="+City Grid" Type="{Tab=Pole Info;Type=string;Ano=208100006}" Value="{Ano=310015}"/>
+        <Property Name="+Street Name" Type="{Tab=Pole Info;Type=string;Ano=208100007}" Value="{Ano=208010010}"/>
+        <Property Name="+Pole Number" Type="{Tab=Pole Info;Type=string;Ano=208100008}" Value="{Ano=208010001}"/>
+        <Property Name="+Class" Type="{Tab=Pole Info;Type=string;Ano=208100009;Items=1,2,3,4,5}" Value=""/>
+        <Property Name="+Height (FT)-Stamped" Type="{Tab=Pole Info;Type=string;Ano=208100010;Items=80,75,70,65,60,55,50,45,40,35,30}" Value=""/>
+        <Property Name="+Height (FT)-Estimated" Type="{Tab=Pole Info;Type=string;Ano=208100011;Items=80,75,70,65,60,55,50,45,40,35,30}" Value=""/>
+        <Property Name="+Overhead Line Type" Type="{Tab=Pole Info;Type=string;Ano=208100012;Items=IN LINE,ANGLE,DEAD-END,STUB,SECONDARY ONLY}" Value=""/>
+        <Property Name="+Species" Type="{Tab=Pole Info;Type=string;Ano=208100013;Items=WESTERN RED CEDAR,YELLOW CEDAR,JACK PINE,LODGEPOLE PINE,RED PINE,SCOTS PINE,SOUTHERN YELLOW PINE,DOUGLAS FIR,OTHER (SPECIFY)}" Value=""/>
+        <Property Name="+Manufacturer" Type="{Tab=Pole Info;Type=string;Ano=208100014;Items=GUELPH UTILITY POLE,B.J.CARNEY,TRANS CANADA POLE,BELL POLE COMPANY,NORTHERN WOOD PRESERVERS,BAXTER,CANADIAN CREOSOTE COMPANY,KOPPERS,OTHER (SPECIFY)}" Value=""/>
+        <Property Name="+Manufacturer Date" Type="{Tab=Pole Info;Type=string;Ano=208100015}" Value=""/>
+        <Property Name="+Material" Type="{Tab=Pole Info;Type=string;Ano=208100035}" Value="{Ano=208010004}"/>
+        <Property Name="+% Remaining Pole Strength" Type="{Tab=Exterior;Type=string;Ano=208100016}" Value=""/>
+        <Property Name="+Estimated Life" Type="{Tab=Exterior;Type=string;Ano=208100017}" Value=""/>
+        <Property Name="+Year of Prev Treatment" Type="{Tab=Exterior;Type=string;Ano=208100018}" Value=""/>
+        <Property Name="+Year of Prev Inspection" Type="{Tab=Exterior;Type=string;Ano=208100019}" Value=""/>
+        <Property Name="+Visual Inspection" Type="{Tab=Exterior;Type=string;Ano=208100020;Items=PASS,FAIL}" Value=""/>
+        <Property Name="+Sound Test" Type="{Tab=Exterior;Type=string;Ano=208100021;Items=PASS,FAIL}" Value=""/>
+        <Property Name="+Pole Condition Description" Type="{Tab=Exterior;Type=string;Ano=208100022}" Value=""/>
+        <Property Name="+Hardware Description" Type="{Tab=Exterior;Type=string;Ano=208100023}" Value=""/>
+        <Property Name="+Soil Condition" Type="{Tab=Exterior;Type=string;Ano=208100024;Items=GOOD,SOFT,WET,LOOSE,OTHER (SPECIFY)}" Value=""/>
+        <Property Name="+Circumference at Ground Line" Type="{Tab=Exterior;Type=string;Ano=208100025}" Value=""/>
+        <Property Name="+Access Problem" Type="{Tab=Exterior;Type=string;Ano=208100026;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Ground Resistance" Type="{Tab=Exterior;Type=string;Ano=208100027}" Value=""/>
+        <Property Name="+Ground Condition" Type="{Tab=Exterior;Type=string;Ano=208100028}" Value=""/>
+        <Property Name="+Equipment ID" Type="{Tab=Exterior;Type=string;Ano=208100029}" Value=""/>
+        <Property Name="+Number of Primary conductors" Type="{Tab=Conductors;Type=string;Ano=208100030}" Value=""/>
+        <Property Name="+Lowest PRI Height above ground(FT)" Type="{Tab=Conductors;Type=string;Ano=208100031}" Value=""/>
+        <Property Name="+Neutral height above ground(FT)" Type="{Tab=Conductors;Type=string;Ano=208100032}" Value=""/>
+        <Property Name="+Number of COMM and CATV conds" Type="{Tab=Conductors;Type=string;Ano=208100033}" Value=""/>
+        <Property Name="+COMM and CATV height above ground" Type="{Tab=Conductors;Type=string;Ano=208100034}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=208100036;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=208100037;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=208100038;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Required Nomenclature" Type="{Tab=Maintenance;Type=string;Ano=208100039;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=208100040}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=208100041;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=208100042;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=208100043;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=208100044;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=208100001;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=208100002;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=208100003;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Hex Status" Type="{Type=string;Ano=208100004;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <!-- New requested Anchor and Guy fields -->
+        <Property Name="+Anchor Site Safe to Public" Type="{Tab=Pole Info;Control=HexMobileControls:HexMobileControls.YesNoSelect;Ano=208100050}" Value=""/>
+        <Property Name="+Anchor Rod Eye Nut Visible" Type="{Tab=Pole Info;Control=HexMobileControls:HexMobileControls.YesNoSelect;Ano=208100051}" Value=""/>
+        <Property Name="+Guy Guard" Type="{Tab=Pole Info;Items=Good,Broken,Wood Type,Missing;Ano=208100052}" Value=""/>
+        <Property Name="+Guy Wire" Type="{Tab=Pole Info;Items=Good,Loose,Corroded;Ano=208100053}" Value=""/>
+        <Property Name="+Guy Assembly Hardware" Type="{Tab=Pole Info;Items=OK,Loose,Broken,Corroded;Ano=208100054}" Value=""/>
+        <Property Name="+Evidence of Grade Change" Type="{Tab=Pole Info;Control=HexMobileControls:HexMobileControls.YesNoSelect;Ano=208100055}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+  <NamedSketch Name="Concrete Pole">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspect"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <Symbol ViewScaleDependent="2" MapScale="500" SymbolFontName="GMLINK" SymbolSize="36" SymbolColor="9109504" SymbolValue="H" SymbolAlignment="0">
+      <Properties>
+        <Property Name="SelectFeature" Type="string" Value="208"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Concrete Pole for Inspection"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Location}" Value=""/>
+        <Property Name="+User" Type="{Tab=Pole Info;Type=string;Ano=208200005}" Value=""/>
+        <Property Name="+City Grid" Type="{Tab=Pole Info;Type=string;Ano=208200006}" Value="{Ano=310015}"/>
+        <Property Name="+Street Name" Type="{Tab=Pole Info;Type=string;Ano=208200007}" Value="{Ano=208010010}"/>
+        <Property Name="+Pole Number" Type="{Tab=Pole Info;Type=string;Ano=208200008}" Value="{Ano=208010001}"/>
+        <Property Name="+Class" Type="{Tab=Pole Info;Type=string;Ano=208200009;Items=J,H,G,F}" Value=""/>
+        <Property Name="+Height (FT)-Stamped" Type="{Tab=Pole Info;Type=string;Ano=208200010;Items=80,75,70,65,60,55,50,45,40,35,30}" Value=""/>
+        <Property Name="+Height (FT)-Estimated" Type="{Tab=Pole Info;Type=string;Ano=208200011;Items=80,75,70,65,60,55,50,45,40,35,30}" Value=""/>
+        <Property Name="+Overhead Line Type" Type="{Tab=Pole Info;Type=string;Ano=208200012;Items=IN LINE,ANGLE,DEAD-END,STUB,SECONDARY ONLY}" Value=""/>
+        <Property Name="+Manufacturer" Type="{Tab=Pole Info;Type=string;Ano=208200014;Items=STRESSCRETE,UTILITY ST,OTHER (SPECIFY)}" Value=""/>
+        <Property Name="+Manufacturer Date" Type="{Tab=Pole Info;Type=string;Ano=208200015}" Value=""/>
+        <Property Name="+Material" Type="{Tab=Pole Info;Type=string;Ano=208200035}" Value="{Ano=208010004}"/>
+        <Property Name="+Visual Inspection" Type="{Tab=Exterior;Type=string;Ano=208200020;Items=PASS,FAIL}" Value=""/>
+        <Property Name="+Pole Condition Description" Type="{Tab=Exterior;Type=string;Ano=208200022}" Value=""/>
+        <Property Name="+Hardware Description" Type="{Tab=Exterior;Type=string;Ano=208200023}" Value=""/>
+        <Property Name="+Soil Condition" Type="{Tab=Exterior;Type=string;Ano=208200024;Items=GOOD,SOFT,WET,LOOSE,OTHER (SPECIFY)}" Value=""/>
+        <Property Name="+Access Problem" Type="{Tab=Exterior;Type=string;Ano=208200026;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Ground Resistance" Type="{Tab=Exterior;Type=string;Ano=208200027}" Value=""/>
+        <Property Name="+Ground Condition" Type="{Tab=Exterior;Type=string;Ano=208200028}" Value=""/>
+        <Property Name="+Equipment ID" Type="{Tab=Exterior;Type=string;Ano=208200029}" Value=""/>
+        <Property Name="+Number of Primary conductors" Type="{Tab=Exterior;Type=string;Ano=208200030}" Value=""/>
+        <Property Name="+Lowest PRI Height above ground(FT)" Type="{Tab=Conductors;Type=string;Ano=208200031}" Value=""/>
+        <Property Name="+Neutral height above ground(FT)" Type="{Tab=Conductors;Type=string;Ano=208200032}" Value=""/>
+        <Property Name="+Number of COMM and CATV conds" Type="{Tab=Conductors;Type=string;Ano=208200033}" Value=""/>
+        <Property Name="+COMM and CATV height above ground" Type="{Tab=Conductors;Type=string;Ano=208200034}" Value=""/>
+        <Property Name="+Overall Priority" Type="{Tab=Maintenance;Type=string;Ano=208200036;Items=No Action Required,Immediate Action Required,Follow-up Required,Correct During Planned Mtnc}" Value=""/>
+        <Property Name="+Safety Concerns" Type="{Tab=Maintenance;Type=string;Ano=208200037;Items=None,Trouble Report Initiated,Site Made Safe,Other (See Notes)}" Value=""/>
+        <Property Name="+GIS Record Errors" Type="{Tab=Maintenance;Type=string;Ano=208200038;Items=None,Equipment Not Shown,Wrong Equipment Shown,Other (See Notes)}" Value=""/>
+        <Property Name="+Required Nomenclature" Type="{Tab=Maintenance;Type=string;Ano=208200039;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+General Notes" Type="{Tab=General Notes;Type=string;Ano=208200040}" Value=""/>
+        <Property Name="+Schedule Date" Type="{Type=string;Ano=208200041;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Schedule Comment" Type="{Type=string;Ano=208200042;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Updated" Type="{Type=string;Ano=208200043;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Inspect Comment" Type="{Type=string;Ano=208200044;Required=True;ReadOnly=True}" Value=""/>
+        <Property Name="+Import Date" Type="{Type=string;Ano=208200001;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Import Comment" Type="{Type=string;Ano=208200002;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+GPS Position" Type="{Type=string;Ano=208200003;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Hex Status" Type="{Type=string;Ano=208200004;Required=True;ReadOnly=True;Visible=False}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+</RedlineDocument>
+
+
+
+
+

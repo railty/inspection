@@ -1,0 +1,5 @@
+<%= form_tag("upload", id:'template', multipart: true) do %>
+  <%= file_field_tag :file, :accept=>".xml" %>
+  <%= submit_tag("Upload") %>
+<% end %>
+<h2 id="msg" ></h2>

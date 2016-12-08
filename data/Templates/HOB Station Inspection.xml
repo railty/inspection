@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RedlineDocument xmlns="urn:HexMobileClient.xsd" ProgID="GNetClient.GRedlineDisplayCtrl" Version="1">
+  <Category Name="Inspected Station" Username="Inspected Station" IsDisplayed="1" DisplayLevel="10" Operations="AllOperations" DefaultMode="DisplayOnly" Modes="AllowAllModes" EventsFired="Select,ModeChange,Delete,Cancel,LButtonDown,LButtonUp,LButtonDblClick,PlacementStart,PlacementEnd,RButtonDown,GeometryChange" LineColor="255" LineWidth="2" LineStyle="0" FillColor="16777215" FillHatch="4" FillStyle="1" FontStyle="Regular" FontName="Arial" FontSize="12" FontColor="0" TextValue="" SymbolFontCharset="1" SymbolFontName="G_MapPins" SymbolSize="20" SymbolColor="255" SymbolValue="I" ViewScaleDependent="0"/>
+  <Properties>
+    <Property Name="Job" Type="string" Value="Station Inspection"/>
+    <Property Name="Notes" Type="string" Value=""/>
+    <Property Name="Template" Type="{Visible=False}" Value=""/>
+  </Properties>
+  <NamedSketch Name="Inspect Station">
+    <Properties>
+      <Property Name="Category" Type="string" Value="Inspected Station"/>
+      <Property Name="Repeating" Type="integer" Value="1"/>
+    </Properties>
+    <!-- Pole -->
+    <Symbol ViewScaleDependent="2" SymbolSize="60" MapScale="500" SymbolColor="65280" SymbolFontName="Wingdings" SymbolFontCharset="1" SymbolValue="þ" SymbolAlignment="9">
+      <Properties>
+        <!-- Command fields -->
+        <Property Name="SelectFeature" Type="{Mode=User;Filter=#219010003='STATION'}" Value="219"/>
+        <Property Name="Required" Type="integer" Value="1"/>
+        <Property Name="Prompt" Type="string" Value="Select Landmark STATION for Inspection"/>
+        <Property Name="Dialog" Type="string" Value="True"/>
+        <!-- Custom Station Properties -->
+        <Property Name="+Station Number" Type="{Ano=219010001;Tab=Station;ReadOnly=True;Color=DarkOrange}" Value=""/>
+        <Property Name="+Battery" Type="{Tab=Station;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+Volts" Type="{Ano=2191068;Tab=Station;Type=double}" Value=""/>
+        <Property Name="+Current" Type="{Ano=2191069;Tab=Station;Type=double}" Value=""/>
+        <Property Name="+Fire Extinguisher" Type="{Tab=Station;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+Checked" Type="{Ano=2191070;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Checked By" Type="{Ano=2191071;Tab=Station}" Value=""/>
+        <Property Name="+Condition" Type="{Tab=Station;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+Lights" Type="{Ano=2191082;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Heaters" Type="{Ano=2191083;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Vents" Type="{Ano=2191084;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Scada" Type="{Ano=2191085;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Garbage" Type="{Ano=2191086;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Fences" Type="{Ano=2191087;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Gates" Type="{Ano=2191088;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Doors" Type="{Ano=2191089;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Erosion" Type="{Ano=2191090;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Arrestors" Type="{Ano=2191091;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Insulators" Type="{Ano=2191001;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Terminators" Type="{Ano=2191002;Tab=Station;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Comments" Type="{Ano=2191003;Tab=Station;Control=HexMobileControls:HexMobileControls.MultilineText}" Value=""/>
+        <Property Name="+Meter Readings T1" Type="{Tab=T1;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+T1 Demand KW" Type="{Ano=2191018;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Energy KWH" Type="{Ano=2191019;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Current MULT" Type="{Ano=2191020;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Current RED" Type="{Ano=2191021;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Current WHITE" Type="{Ano=2191022;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Current BLUE" Type="{Ano=2191023;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Pt.Voltage RED" Type="{Ano=2191024;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Pt.Voltage WHITE" Type="{Ano=2191025;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Pt.Voltage BLUE" Type="{Ano=2191026;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+Transformer T1" Type="{Tab=T1;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+T1 Oiltemp" Type="{Ano=2191072;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Windtemp" Type="{Ano=2191073;Tab=T1;Type=double}" Value=""/>
+        <Property Name="+T1 Tap Pos'n" Type="{Ano=2191074;Tab=T1;Items=Front,Back}" Value=""/>
+        <Property Name="+T1 Leaks" Type="{Ano=2191075;Tab=T1;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+T1 Bushings" Type="{Ano=2191076;Tab=T1;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Meter Readings T2" Type="{Tab=T2;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+T2 Demand KW" Type="{Ano=2191027;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Energy KWH" Type="{Ano=2191028;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Current MULT" Type="{Ano=2191029;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Current RED" Type="{Ano=2191030;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Current WHITE" Type="{Ano=2191031;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Current BLUE" Type="{Ano=2191032;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Pt.Voltage RED" Type="{Ano=2191033;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Pt.Voltage WHITE" Type="{Ano=2191034;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Pt.Voltage BLUE" Type="{Ano=2191035;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+Transformer T2" Type="{Tab=T2;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+T2 Oiltemp" Type="{Ano=2191077;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Windtemp" Type="{Ano=2191078;Tab=T2;Type=double}" Value=""/>
+        <Property Name="+T2 Tap Pos'n" Type="{Ano=2191079;Tab=T2;Items=Front,Back}" Value=""/>
+        <Property Name="+T2 Leaks" Type="{Ano=2191080;Tab=T2;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+T2 Bushings" Type="{Ano=2191081;Tab=T2;Control=HexMobileControls:HexMobileControls.YesNoSelect}" Value=""/>
+        <Property Name="+Meter Readings Feeder 1" Type="{Tab=F1;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F1 MULT" Type="{Ano=2191036;Tab=F1;Type=double}" Value=""/>
+        <Property Name="+F1 RED" Type="{Ano=2191037;Tab=F1;Type=double}" Value=""/>
+        <Property Name="+F1 WHITE" Type="{Ano=2191038;Tab=F1;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 2" Type="{Tab=F2;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F1 BLUE" Type="{Ano=2191039;Tab=F1;Type=double}" Value=""/>
+        <Property Name="+F2 MULT" Type="{Ano=2191040;Tab=F2;Type=double}" Value=""/>
+        <Property Name="+F2 RED" Type="{Ano=2191041;Tab=F2;Type=double}" Value=""/>
+        <Property Name="+F2 WHITE" Type="{Ano=2191042;Tab=F2;Type=double}" Value=""/>
+        <Property Name="+F2 BLUE" Type="{Ano=2191043;Tab=F2;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 3" Type="{Tab=F3;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F3 MULT" Type="{Ano=2191044;Tab=F3;Type=double}" Value=""/>
+        <Property Name="+F3 RED" Type="{Ano=2191045;Tab=F3;Type=double}" Value=""/>
+        <Property Name="+F3 WHITE" Type="{Ano=2191046;Tab=F3;Type=double}" Value=""/>
+        <Property Name="+F3 BLUE" Type="{Ano=2191047;Tab=F3;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 4" Type="{Tab=F4;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F4 MULT" Type="{Ano=2191048;Tab=F4;Type=double}" Value=""/>
+        <Property Name="+F4 RED" Type="{Ano=2191049;Tab=F4;Type=double}" Value=""/>
+        <Property Name="+F4 WHITE" Type="{Ano=2191050;Tab=F4;Type=double}" Value=""/>
+        <Property Name="+F4 BLUE" Type="{Ano=2191051;Tab=F4;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 5" Type="{Tab=F5;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F5 MULT" Type="{Ano=2191052;Tab=F5;Type=double}" Value=""/>
+        <Property Name="+F5 RED" Type="{Ano=2191053;Tab=F5;Type=double}" Value=""/>
+        <Property Name="+F5 WHITE" Type="{Ano=2191054;Tab=F5;Type=double}" Value=""/>
+        <Property Name="+F5 BLUE" Type="{Ano=2191055;Tab=F5;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 6" Type="{Tab=F6;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F6 MULT" Type="{Ano=2191056;Tab=F6;Type=double}" Value=""/>
+        <Property Name="+F6 RED" Type="{Ano=2191057;Tab=F6;Type=double}" Value=""/>
+        <Property Name="+F6 WHITE" Type="{Ano=2191058;Tab=F6;Type=double}" Value=""/>
+        <Property Name="+F6 BLUE" Type="{Ano=2191059;Tab=F6;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 7" Type="{Tab=F7;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F7 MULT" Type="{Ano=2191060;Tab=F7;Type=double}" Value=""/>
+        <Property Name="+F7 RED" Type="{Ano=2191061;Tab=F7;Type=double}" Value=""/>
+        <Property Name="+F7 WHITE" Type="{Ano=2191062;Tab=F7;Type=double}" Value=""/>
+        <Property Name="+F7 BLUE" Type="{Ano=2191063;Tab=F7;Type=double}" Value=""/>
+        <Property Name="+Meter Readings Feeder 8" Type="{Tab=F8;ReadOnly=True;BackColor=SteelBlue;Color=White}" Value=""/>
+        <Property Name="+F8 MULT" Type="{Ano=2191064;Tab=F8;Type=double}" Value=""/>
+        <Property Name="+F8 RED" Type="{Ano=2191065;Tab=F8;Type=double}" Value=""/>
+        <Property Name="+F8 WHITE" Type="{Ano=2191066;Tab=F8;Type=double}" Value=""/>
+        <Property Name="+F8 BLUE" Type="{Ano=2191067;Tab=F8;Type=double}" Value=""/>
+        <!-- System Properties -->
+        <Property Name="+GPS Position" Type="{Ano=2191015;ReadOnly=True;Visible=False}" Value=""/>
+        <Property Name="+Modification Status" Type="{Visible=False}" Value="UpdateAttributes"/>
+        <Property Name="+Feature Key" Type="{ReadOnly=True;Number=Station Number;Visible=False}" Value=""/>
+        <Property Name="+Hyperlink Files" Type="{Visible=False}" Value=""/>
+        <Property Name="+Media Files" Type="{Visible=False}" Value=""/>
+        <Property Name="+Updated" Type="{Visible=False}" Value=""/>
+        <Property Name="+User" Type="{Visible=False}" Value=""/>
+      </Properties>
+    </Symbol>
+  </NamedSketch>
+</RedlineDocument>
+
+

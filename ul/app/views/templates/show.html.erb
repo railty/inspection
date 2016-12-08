@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<table style="border:solid 1px black">
+<% @template.properties.each do |tab| %>
+<tr>
+  <td><%= tab['name'] %></td>
+  <td><table>
+    <% tab['properties'].each do |property| %>
+    <tr>
+      <td style="border: 1px solid black"><%= property['name'] %></td>
+      <td style="border: 1px solid black"><%= property['type'] %></td>
+      <td style="border: 1px solid black"><%= property['required'] %></td>
+      <td style="border: 1px solid black"><%= property['readOnly'] %></td>
+      <td style="border: 1px solid black"><%= property['visible'] %></td>
+      <td style="border: 1px solid black"><%= property['restricted'] %></td>
+      <td style="border: 1px solid black"><%= property['choices'] %></td>
+
+
+    </tr>
+    <% end %>
+  </table></td>
+</tr>
+<% end %>
+</table>
+<%= link_to 'Edit', edit_template_path(@template) %> |
+<%= link_to 'Back', templates_path %>
