@@ -1,7 +1,11 @@
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+
 import React, { PropTypes } from 'react'
 import ReactDOM from 'react-dom';
 import DataStore from './dataStore';
 import DataActions from './dataActions';
+
+import { Button } from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -55,6 +59,10 @@ class App extends React.Component {
     return (
       <div>
         <h1 id='date'>{this.state.seconds}</h1>
+        <Button bsStyle="success" bsSize="small" onClick={this.onClick2.bind(this)}>
+          Something
+        </Button>
+
         <input type="button" onClick={this.onClick.bind(this)} value="Test" />
         <input type="button" onClick={this.onClick2.bind(this)} value="Test2" />
         {divs}
