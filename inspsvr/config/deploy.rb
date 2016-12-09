@@ -2,7 +2,8 @@
 lock '3.6.1'
 
 set :application, 'inspsvr'
-set :repo_url, 'https://github.com/railty/inspection.git/inspsvr'
+set :repo_url, 'https://github.com/railty/inspection.git'
+set :repo_tree, 'inspsvr'
 set :rbenv_path, '/home/sning/.rbenv/'
 set :rbenv_ruby, '2.2.2'
 
@@ -27,7 +28,7 @@ set :deploy_to, '/home/sning/public_html/inspsvr'
 # set :pty, true
 
 # Default value for :linked_files is []
-# append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
