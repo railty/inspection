@@ -74,7 +74,9 @@ class InspectionsController < ApplicationController
     File.open("data/" + file.original_filename, 'wb') {|f| f.write(str) }
 
     features = JSON.parse(str)
-    n = Inspection.load(features)
+    features.each do |inspection|
+      n = Inspection.load(inspection)
+    end
 
     respond_to do |format|
       format.json { render :json => {:count => n} }
