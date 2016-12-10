@@ -71,7 +71,7 @@ class InspectionsController < ApplicationController
     file = inspection_params
 
     str = file.read
-    File.open("../data/" + file.original_filename, 'wb') {|f| f.write(str) }
+    File.open("data/" + file.original_filename, 'wb') {|f| f.write(str) }
 
     features = JSON.parse(str)
     n = Inspection.load(features)
