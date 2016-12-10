@@ -1,12 +1,14 @@
 clients/node_modules/
 
-/ul/.bundle
-/ul/.byebug_history
-/ul/db/*.sqlite3
-/ul/db/*.sqlite3-journal
-/ul/log/*
-!/ul/log/.keep
-/ul/tmp
+/inspsvr/.bundle
+/inspsvr/.byebug_history
+/inspsvr/db/*.sqlite3
+/inspsvr/db/*.sqlite3-journal
+/inspsvr/log/*
+!/inspsvr/log/.keep
+/inspsvr/tmp
 
 /clients/platforms/
 /clients/plugins/
+
+/inspsvr/data/*.json

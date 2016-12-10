@@ -79,7 +79,7 @@ class InspectionsController < ApplicationController
     end
 
     respond_to do |format|
-      format.json { render :json => {:count => n} }
+      format.json { render :json => {:count => features.length} }
     end
   end
 
