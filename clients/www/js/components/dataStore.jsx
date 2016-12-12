@@ -8,12 +8,18 @@ class DataStore {
     this.seconds = 0;
     this.message = "Ready"
     this.inspection = '';
+    this.inspections = '';
+    this.selectedPane = 'list';
 
     this.bindListeners({
       tick: DataActions.tick,
       setMessage: DataActions.setMessage,
+      selectPane: DataActions.selectPane,
+
+      dlInspection: DataActions.dlInspection,
       setInspection: DataActions.setInspection,
-      getAjaxInspection: DataActions.getAjaxInspection,
+      dlInspections: DataActions.dlInspections,
+      setInspections: DataActions.setInspections,
     });
   }
 
@@ -25,15 +31,29 @@ class DataStore {
     this.message = msg;
   }
 
+  selectPane(pane){
+    console.log(pane);
+    this.selectedPane = pane;
+  }
+
   setInspection(inspection){
     this.inspection = inspection;
+    this.selectedPane = 'inspection';
     this.setMessage("Ready");
   }
 
-  getAjaxInspection(msg){
+  dlInspection(msg){
     this.setMessage("Loading " + msg);
   }
 
+  dlInspections(inspections){
+    this.inspections = inspections;
+  }
+
+  setInspections(inspections){
+    this.inspections = inspections;
+    this.setMessage("Ready");
+  }
 }
 
 export default alt.createStore(DataStore, 'DataStore');

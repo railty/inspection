@@ -4,8 +4,11 @@ import React, { PropTypes } from 'react'
 import ReactDOM from 'react-dom';
 import DataStore from './dataStore';
 import DataActions from './dataActions';
+import Bottom from './bottom';
+import List from './list';
+import Inspection from './inspection';
 
-import { Button } from 'react-bootstrap';
+import * as RB from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,7 +21,8 @@ class App extends React.Component {
       DataActions.tick();
     }.bind(this), 1000000);
     this.unlisten = DataStore.listen(this.onChange.bind(this));
-    DataActions.getAjaxInspection(5);
+    //DataActions.getAjaxInspection(1052);
+    DataActions.dlInspections();
   }
 
   componentWillUnmount() {
@@ -59,7 +63,6 @@ class App extends React.Component {
   }
 
   readFile(fileEntry) {
-
     fileEntry.file(function (file) {
         var reader = new FileReader();
 
@@ -95,34 +98,18 @@ class App extends React.Component {
   }
 
   render () {
-    var divs = null;
-    if (this.state.inspection != ''){
-      divs = this.state.inspection.properties.filter((property) => {
-        if ((property.type)&&(property.type.datatype)&&property.type.tab&&property.type.tab=='TX Info'){
-          return (property.type.datatype == 'string');
-        }
-        return false;
-      }).map((property, i) => {
-        return (<div key={i}> {property.name} </div>);
-      });
-      console.log(divs);
-      //debugger;
-    }
+    var pane;
+    if (this.state.selectedPane == 'list') pane = <List/>
+    if (this.state.selectedPane == 'inspection') pane = <Inspection/>
 
     return (
       <div>
-        <h1 id='date'>{this.state.seconds}</h1>
-        <Button bsStyle="success" bsSize="small" onClick={this.onClick2.bind(this)}>
-          Something
-        </Button>
-
-        <input type="button" onClick={this.onClick.bind(this)} value="Test" />
-        <input type="button" onClick={this.onClick2.bind(this)} value="Test2" />
-        {divs}
-        <div>{this.state.inspection.inspector}</div>
-        <div>{this.state.message}</div>
+        <Bottom />
+        {pane}
       </div>
     );
+
+
   }
 }
 

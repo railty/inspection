@@ -1,1 +1,1 @@
-json.data @inspection
+json.extract! @inspection, *@inspection.attributes.keys
