@@ -23,13 +23,14 @@ class Inspection extends React.Component {
   onChange(state) {
     this.setState(state);
   }
-  onClick(id) {
-    DataActions.selectInspection(id);
-    return false;
+
+  onInput(e) {
+    var k = e.target.getAttribute('k');
+    var v = e.target.value;
+    DataActions.setInspectionProperty({name: k, value: v});
   }
 
   render () {
-    var divs = '';
     var inspection = this.state.inspection;
     if (inspection){
       var properties = inspection.properties;
@@ -45,6 +46,7 @@ class Inspection extends React.Component {
               name: property.name,
               datatype: property.type.datatype,
               value: property.value,
+              id: property.id,
             });
           }
           else{
@@ -55,6 +57,7 @@ class Inspection extends React.Component {
                   name: property.name,
                   datatype: property.type.datatype,
                   value: property.value,
+                  id: property.id,
                 }
               ]
             }
@@ -65,26 +68,30 @@ class Inspection extends React.Component {
     }
 
     var ctrlTabs = tabs.map((tab, i)=>{
-
-      var ctrls = tab.properties.map((property, k)=>{
-        if (property.type.datatype == 'string')
+      var ctrls = tab.properties.map((property, j)=>{
+        if (property.datatype == 'string'){
           return (
-            <tr key={k}>
+            <tr key={j}>
               <td width='200px'>{property.name}</td>
-              <td><RB.FormControl type="text" value={property.value} /></td>
+              <td><RB.FormControl type="text" value={property.value} k={property.id} onChange={this.onInput} /></td>
             </tr>
           );
-        if (property.type.datatype == 'boolean')
+        }
+
+        console.log(property.datatype);
+
+        if (property.datatype == 'boolean'){
           return (
-            <tr key={k}>
+            <tr key={j}>
               <td width='200px'>{property.name}</td>
-              <td><RB.FormControl type="text" value={property.value} /></td>
+              <td><RB.FormControl type="text" value={property.value} k={property.id} onChange={this.onInput} /></td>
             </tr>
             );
+        }
       });
 
-       return (
-         <RB.Tab key={i} eventKey={i} title={tab.name}>
+      return (
+        <RB.Tab key={i} eventKey={i} title={tab.name}>
           <RB.Table striped bordered condensed hover>
             <tbody>
             {ctrls}
@@ -93,11 +100,7 @@ class Inspection extends React.Component {
         </RB.Tab>);
     });
 
-    return (
-      <RB.Tabs activeKey={this.state.key} onSelect={this.handleSelect} id="controlled-tab-example">
-        {ctrlTabs}
-      </RB.Tabs>
-    );
+    return (<RB.Tabs id="tabs_inspection">{ctrlTabs}</RB.Tabs>);
   }
 }
 

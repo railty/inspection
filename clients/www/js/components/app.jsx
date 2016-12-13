@@ -99,8 +99,8 @@ class App extends React.Component {
 
   render () {
     var pane;
-    if (this.state.selectedPane == 'list') pane = <List/>
-    if (this.state.selectedPane == 'inspection') pane = <Inspection/>
+    if (this.state.selectedPane == 'list') pane = <List/> ;
+    if (this.state.selectedPane == 'inspection') pane = <Inspection/> ;
 
     return (
       <div>
@@ -108,7 +108,6 @@ class App extends React.Component {
         {pane}
       </div>
     );
-
 
   }
 }

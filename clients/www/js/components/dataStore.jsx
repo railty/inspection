@@ -20,6 +20,8 @@ class DataStore {
       setInspection: DataActions.setInspection,
       dlInspections: DataActions.dlInspections,
       setInspections: DataActions.setInspections,
+
+      setInspectionProperty: DataActions.setInspectionProperty,
     });
   }
 
@@ -54,6 +56,22 @@ class DataStore {
     this.inspections = inspections;
     this.setMessage("Ready");
   }
+
+  setInspectionProperty(prop){
+    var properties = this.inspection.properties;
+
+    for (var i in properties) {
+      //note the id is number and name is string, in js == will return true for 1 == '1'
+      if (properties[i].id == prop.name) {
+        properties[i].value = prop.value;
+        break;
+      }
+   }
+
+    //this.inspection.properties = properties;
+    this.setMessage("Ready");
+  }
+
 }
 
 export default alt.createStore(DataStore, 'DataStore');

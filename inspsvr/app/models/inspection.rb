@@ -15,6 +15,7 @@ class Inspection < ApplicationRecord
   def self.load(hInspection)
       inspection = Inspection.new
       properties = []
+      iProperty = 1
       hInspection.each do |k, v|
         if k == 'Feature Key' then
           fno, fid, cno, cid = v['value'].split(/\s*,\s*/)
@@ -74,7 +75,8 @@ class Inspection < ApplicationRecord
               puts "#{k}==>#{l}-->#{r}"
             end
           end
-          properties << {name: k, type: tp, value: v['value']}
+          properties << {name: k, type: tp, value: v['value'], id: iProperty}
+          iProperty = iProperty + 1
         end
       end
       inspection.properties = properties

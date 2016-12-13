@@ -49,6 +49,10 @@ class DataActions{
     return inspection;
   }
 
+  setInspectionProperty(property) {
+    return property;
+  }
+
   setInspections(inspections) {
     return inspections;
   }
