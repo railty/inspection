@@ -4,6 +4,9 @@ import DataStore from './dataStore';
 import DataActions from './dataActions';
 
 import * as RB from 'react-bootstrap';
+import Switch from 'react-bootstrap-switch';
+
+import BootstrapSwitch from 'react-bootstrap-switch/dist/css/bootstrap3/react-bootstrap-switch.css';
 
 class Inspection extends React.Component {
   constructor(props) {
@@ -26,6 +29,12 @@ class Inspection extends React.Component {
 
   onInput(e) {
     var k = e.target.getAttribute('k');
+    var v = e.target.text;
+    DataActions.setInspectionProperty({name: k, value: v});
+  }
+
+  onSelect(n, e) {
+    var k = e.target.getAttribute('k');
     var v = e.target.value;
     DataActions.setInspectionProperty({name: k, value: v});
   }
@@ -47,6 +56,7 @@ class Inspection extends React.Component {
               datatype: property.type.datatype,
               value: property.value,
               id: property.id,
+              items: property.type.items,
             });
           }
           else{
@@ -58,6 +68,7 @@ class Inspection extends React.Component {
                   datatype: property.type.datatype,
                   value: property.value,
                   id: property.id,
+                  items: property.type.items,
                 }
               ]
             }
@@ -70,12 +81,50 @@ class Inspection extends React.Component {
     var ctrlTabs = tabs.map((tab, i)=>{
       var ctrls = tab.properties.map((property, j)=>{
         if (property.datatype == 'string'){
-          return (
-            <tr key={j}>
-              <td width='200px'>{property.name}</td>
-              <td><RB.FormControl type="text" value={property.value} k={property.id} onChange={this.onInput} /></td>
-            </tr>
-          );
+          if (property.items){
+            /*
+            var items = property.items.map((item, n)=>{
+              return (
+                <RB.MenuItem eventKey={n} key={n}>{item}</RB.MenuItem>
+              );
+            });
+            return (
+              <tr key={j}>
+                <td width='200px'>{property.name}</td>
+                <td>
+                  <RB.DropdownButton bsStyle='default' title={property.value} id={j} k={property.id} onSelect={this.onSelect}>
+                    {items}
+                  </RB.DropdownButton>
+                </td>
+              </tr>
+            );
+            */
+
+            var options = property.items.map((item, n)=>{
+              return (
+                <option key={n} value={item}>{item}</option>
+              );
+            });
+            return (
+              <tr key={j}>
+                <td width='200px'>{property.name}</td>
+                <td>
+                <RB.FormControl componentClass="select" placeholder="select" k={property.id} onSelect={this.onSelect}>
+                  {options}
+                </RB.FormControl>
+                </td>
+              </tr>
+            );
+
+          }
+          else{
+            return (
+              <tr key={j}>
+                <td width='200px'>{property.name}</td>
+                <td><RB.FormControl type="text" value={property.value} k={property.id} onChange={this.onInput} /></td>
+              </tr>
+            );
+          }
         }
 
         console.log(property.datatype);
@@ -84,7 +133,7 @@ class Inspection extends React.Component {
           return (
             <tr key={j}>
               <td width='200px'>{property.name}</td>
-              <td><RB.FormControl type="text" value={property.value} k={property.id} onChange={this.onInput} /></td>
+              <td><Switch /></td>
             </tr>
             );
         }

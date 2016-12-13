@@ -36,10 +36,24 @@ class DataActions{
     return (dispatch) => {
       dispatch("Waiting");
       ServerSource.dlInspections()
+      .then((strInspections) => {
+        return ServerSource.saveInspections(strInspections);
+      }).then((inspections) => {
+        debugger;
+        this.setInspections(inspections);
+      }).catch((errorMessage) => {
+        this.setMessage(errorMessage);
+      });
+    }
+  }
+
+  readInspections(){
+    return (dispatch) => {
+      dispatch("Waiting");
+      ServerSource.readInspections()
       .then((inspections) => {
         this.setInspections(inspections);
-      })
-      .catch((errorMessage) => {
+      }).catch((errorMessage) => {
         this.setMessage(errorMessage);
       });
     }
