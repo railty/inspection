@@ -7,6 +7,7 @@ import DataActions from './dataActions';
 import Bottom from './bottom';
 import List from './list';
 import Inspection from './inspection';
+import Map from './map';
 
 import * as RB from 'react-bootstrap';
 
@@ -43,6 +44,7 @@ class App extends React.Component {
     var pane;
     if (this.state.selectedPane == 'list') pane = <List/> ;
     if (this.state.selectedPane == 'inspection') pane = <Inspection/> ;
+    if (this.state.selectedPane == 'map') pane = <Map/> ;
 
     return (
       <div>

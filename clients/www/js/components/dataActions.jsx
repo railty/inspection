@@ -39,13 +39,31 @@ class DataActions{
       .then((strInspections) => {
         return ServerSource.saveInspections(strInspections);
       }).then((inspections) => {
-        debugger;
         this.setInspections(inspections);
+
+        function dlInspection(id) {
+          return new Promise((resolve) => {
+            ServerSource.dlInspection(id).then((strInspection)=>{
+              console.log("download"+id);
+              return ServerSource.saveInspection(id, strInspection);
+            }).then((inspection)=>{
+              resolve();
+            });
+          });
+        }
+
+        let chain = Promise.resolve();
+        for (var i=0; i<inspections.length; i++){
+          chain = chain.then(dlInspection.bind(null, inspections[i].id));
+        }
+
+
       }).catch((errorMessage) => {
         this.setMessage(errorMessage);
       });
     }
   }
+
 
   readInspections(){
     return (dispatch) => {
@@ -53,6 +71,18 @@ class DataActions{
       ServerSource.readInspections()
       .then((inspections) => {
         this.setInspections(inspections);
+      }).catch((errorMessage) => {
+        this.setMessage(errorMessage);
+      });
+    }
+  }
+
+  readInspection(id){
+    return (dispatch) => {
+      dispatch("Waiting");
+      ServerSource.readInspection(id)
+      .then((inspection) => {
+        this.setInspection(inspection);
       }).catch((errorMessage) => {
         this.setMessage(errorMessage);
       });

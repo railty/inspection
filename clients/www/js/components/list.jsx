@@ -25,7 +25,8 @@ class List extends React.Component {
   }
 
   onClick(o) {
-    DataActions.dlInspection(o.id);
+    //DataActions.dlInspection(o.id);
+    DataActions.readInspection(o.id);
     return false;
   }
 
