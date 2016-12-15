@@ -42,6 +42,7 @@ class DataActions{
         this.setInspections(inspections);
 
         function dlInspection(id) {
+          dispatch("Downloading " + id);
           return new Promise((resolve) => {
             ServerSource.dlInspection(id).then((strInspection)=>{
               console.log("download"+id);
@@ -56,7 +57,9 @@ class DataActions{
         for (var i=0; i<inspections.length; i++){
           chain = chain.then(dlInspection.bind(null, inspections[i].id));
         }
-
+        chain.then(()=>{
+          dispatch("Download Finished");
+        });
 
       }).catch((errorMessage) => {
         this.setMessage(errorMessage);
@@ -64,6 +67,16 @@ class DataActions{
     }
   }
 
+  deleteInspections(){
+    return (dispatch) => {
+      ServerSource.deleteInspections()
+      .then(() => {
+        this.setMessage("clear");
+      }).catch((errorMessage) => {
+        this.setMessage(errorMessage);
+      });
+    }
+  }
 
   readInspections(){
     return (dispatch) => {

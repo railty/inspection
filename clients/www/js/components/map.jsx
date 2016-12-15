@@ -24,13 +24,20 @@ class Map extends React.Component {
     this.setState(state);
   }
 
-  onClick(e) {
+  onDownload(e) {
     DataActions.dlInspections();
+  }
+  onDelete(e) {
+    DataActions.deleteInspections();
   }
 
   render () {
     return (
-       <RB.Button bsStyle="primary" onClick={this.onClick}>Download</RB.Button>
+      <div>
+       <RB.Button bsStyle="primary" onClick={this.onDownload}>Download</RB.Button>
+       <RB.Button bsStyle="primary" onClick={this.onDelete}>Delete</RB.Button>
+       <RB.FormControl componentClass="textarea" placeholder={this.state.message} />
+      </div>
     );
   }
 }

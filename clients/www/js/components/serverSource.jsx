@@ -132,9 +132,21 @@ const ServerSource = {
       }.bind(this), this.onError);
     }.bind(this), this.onError);
     return p;
-  }
+  },
 
-
+  deleteInspections: function() {
+    var promise_resolve, promise_reject, p = new Promise(function (resolve, reject) { promise_resolve = resolve; promise_reject = reject; });
+    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
+      //console.log('file system open: ' + fs.name);
+      fs.root.getFile("inspections.json", {create: false, exclusive: true}, function (fileEntry) {
+        //console.log("fileEntry is file?" + fileEntry.isFile.toString());
+        fileEntry.remove(function (file) {
+          promise_resolve();
+        }, this.onError);
+      }.bind(this), this.onError);
+    }.bind(this), this.onError);
+    return p;
+  },
 
 };
 

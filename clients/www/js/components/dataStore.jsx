@@ -49,7 +49,11 @@ class DataStore {
   }
 
   dlInspections(inspections){
-    this.inspections = inspections;
+
+    if (typeof inspections === 'string'){
+      this.setMessage(inspections);
+    }
+    else this.inspections = inspections;
   }
 
   setInspections(inspections){
