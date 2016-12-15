@@ -4,7 +4,8 @@ var fs = require('fs');
 module.exports = {
   entry: ['./www/js/index.js'],
   output: {
-    path: path.resolve(__dirname, "platforms/browser/www/js/"),
+    /*path: path.resolve(__dirname, "platforms/browser/www/js/"),*/
+    path: path.resolve(__dirname, "www/js/"),
     publicPath: "/js/",
     filename: "bundle.js"
   },

@@ -10,5 +10,12 @@ clients/node_modules/
 
 /clients/platforms/
 /clients/plugins/
+/clients/www/js/*.woff2
+/clients/www/js/*.svg
+/clients/www/js/*.ttf
+/clients/www/js/*.eot
+/clients/www/js/*.woff
+/clients/www/js/bundle.js
+/clients/www/js/bundle.js.map
 
 /inspsvr/data/*.json
